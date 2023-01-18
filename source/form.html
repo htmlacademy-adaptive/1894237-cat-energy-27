@@ -36,42 +36,74 @@
       <form class="program-selection__form">
         <fieldset class="about-the-cat">
           <legend class="about-the-cat__heading">Заполните анкету, и мы подберем программы питания для вашего кота</legend>
-            <label class="about-the-cat__text" for="name">Имя:*</label>
-            <input class="about-the-cat__field" type="text" id="name" name="name" value="Барсик">
-            <label class="about-the-cat__text" for="weight">Вес(кг):</label>
-            <input class="about-the-cat__field" type="text" id="weight" name="weight" value="7">
-            <label class="about-the-cat__text" for="age">Возраст(Лет):</label>
-            <input class="about-the-cat__field" type="text" id="age" name="age" value="7">
+          <ul class="about-the-cat__list">
+            <li class="about-the-cat__item">
+              <label class="about-the-cat__text" for="name">Имя:*</label>
+              <input class="about-the-cat__field" type="text" id="name" name="name" value="Барсик">
+            </li>
+            <li class="about-the-cat__item">
+              <label class="about-the-cat__text" for="weight">Вес(кг):*</label>
+              <input class="about-the-cat__field" type="text" id="weight" name="weight" value="7">
+            </li>
+            <li class="about-the-cat__item">
+              <label class="about-the-cat__text" for="age">Возраст(Лет):</label>
+              <input class="about-the-cat__field" type="text" id="age" name="age" value="7">
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="goal-selection">
-          <input class="goal-selection__radio"  type="radio" id="weight_loss" name="weight_loss" checked>
-          <label class="goal-selection__text" for="weight_loss">Похудение</label>
-          <input class="goal-selection__radio"  type="radio" id="weight_gain" name="weight_gain">
-          <label class="goal-selection__text" for="weight_gain">Набор массы</label>
-          <input class="goal-selection__radio"  type="radio" id="need_advice" name="need_advice">
-          <label class="goal-selection__text" for="need_advice">Не знаю (нужен ваш совет)</label>
+          <ul class="goal-selection__list">
+            <li class="goal-selection__item">
+              <input class="goal-selection__radio"  type="radio" id="weight_loss" name="weight_loss" checked>
+              <label class="goal-selection__text" for="weight_loss">Похудение</label>
+            </li>
+            <li class="goal-selection__item">
+              <input class="goal-selection__radio"  type="radio" id="weight_gain" name="weight_gain">
+              <label class="goal-selection__text" for="weight_gain">Набор массы</label>
+            </li>
+            <li class="goal-selection__item">
+              <input class="goal-selection__radio"  type="radio" id="need_advice" name="need_advice">
+              <label class="goal-selection__text" for="need_advice">Не знаю (нужен ваш совет)</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="contacts">
           <legend class="contacts__heading">Контактные данные (владельца кота)</legend>
-          <label class="contacts__text" for="e-mail">E-mail:*</label>
-          <input class="contacts__field" type="text" id="e-mail" name="e-mail" value="Kuklachev@Gmail.com">
-          <label class="contacts__text" for="phone">Телефон:*</label>
-          <input class="contacts__field" type="text" id="phone" name="phone" value="8(960)900-60-90">
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <label class="contacts__text" for="e-mail">E-mail:*</label>
+              <input class="contacts__field" type="text" id="e-mail" name="e-mail" value="Kuklachev@Gmail.com">
+            </li>
+            <li class="contacts__item">
+              <label class="contacts__text" for="phone">Телефон:*</label>
+              <input class="contacts__field" type="text" id="phone" name="phone" value="8(960)900-60-90">
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="comment">
           <legend class="comment__heading">Комментарий</legend>
-          <p><textarea class="comment__text" rows="9">Расскажите обо всех повадках кота</textarea></p>
+          <p class="comment-text"><textarea class="comment__textarea" rows="9">Расскажите обо всех повадках кота</textarea></p>
         </fieldset>
         <fieldset class="additionally">
             <legend class="additionally__heading">Дополнительно</legend>
-            <input class="additionally__checkbox" type="checkbox" id="sweetener" checked>
-            <label class="additionally__text" for="sweetener">Сахарозаменитель</label>
-            <input class="additionally__checkbox" type="checkbox" id="water">
-            <label class="additionally__text" for="water">Питьевая вода</label>
-            <input class="additionally__checkbox" type="checkbox" id="milk">
-            <label class="additionally__text" for="milk">Молоко</label>
-            <input class="additionally__checkbox" type="checkbox" id="vitamins">
-            <label class="additionally__text" for="vitamins">Витамины</label>
+            <ul class="additionally__list">
+              <li class="additionnaly__item">
+                <input class="additionally__checkbox" type="checkbox" id="sweetener" checked>
+                <label class="additionally__text" for="sweetener">Сахарозаменитель</label>
+              </li>
+              <li class="additionnaly__item">
+                <input class="additionally__checkbox" type="checkbox" id="water">
+                <label class="additionally__text" for="water">Питьевая вода</label>
+              </li>
+              <li class="additionnaly__item">
+                <input class="additionally__checkbox" type="checkbox" id="milk">
+                <label class="additionally__text" for="milk">Молоко</label>
+              </li>
+              <li class="additionnaly__item">
+                <input class="additionally__checkbox" type="checkbox" id="vitamins">
+                <label class="additionally__text" for="vitamins">Витамины</label>
+              </li>
+            </ul>
             <button class="additionally__button button" type="submit">Отправить заявку</button>
             <p class="additionally__tagging">* - Обязательные поля</p>
         </fieldset>
